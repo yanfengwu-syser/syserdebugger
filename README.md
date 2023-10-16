@@ -6,6 +6,6 @@ The open source project is as his last wish.
 
 
 
-## build
+## Build
 
 [Buidling method](Doc/build.md)
