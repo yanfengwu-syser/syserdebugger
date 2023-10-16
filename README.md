@@ -1,4 +1,4 @@
-# syserdebugger
+# SyserDebugger NG
 
 Pay respect to the original author of syser debugger: [Yanfeng Wu](ori_author.md)
 
