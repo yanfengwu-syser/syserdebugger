@@ -1,0 +1,160 @@
+0>Bad Path string: L'e:\ F '
+
+BUILD: Computing Include file dependencies:
+BUILD: Examining f:\syserdbg\project\exeanalyzer\source directory for files to compile.
+oacr invalidate root:x86chk /autocleanqueue
+1>Compiling f:\syserdbg\project\exeanalyzer\source *************
+1>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+1>f:\syserdbg\project\exeanalyzer\source: TARGETPATH is Obj
+1>BUILDMSG: _NT_TARGET_VERSION SET TO WS03
+1>C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrcl /MT /U_MT /Ii386 /I. /If:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386 /IC:\WinDDK\7600.16385.0\inc\api /IC:\WinDDK\7600.16385.0\inc\api /IC:\WinDDK\7600.16385.0\inc\ddk /IC:\WinDDK\7600.16385.0\inc\ddk /IC:\WinDDK\7600.16385.0\inc\crt /D_X86_=1 /Di386=1 /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1 /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0502 /DWINVER=0x0502 /D_WIN32_IE=0x0603 /DWIN32_LEAN_AND_MEAN=1 /DDEVL=1 /DDBG=1 /D__BUILDMACHINE__=WinDDK /DFPO=0 /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP /DDEPRECATE_DDK_FUNCTIONS=1 /DMSC_NOOPT /DNTDDI_VERSION=0x05020100 /c /Zc:wchar_t- /Zl /Zp8 /Gy /Gm- -cbstring /W3 /Gz /hotpatch /EHs-c- /GR- /GF /GS /Z7 /Od /Oi /Oy- /Z7 /DKMDF_MAJOR_VERSION_STRING=01 /DKMDF_MINOR_VERSION_STRING=009 /wd4603 /wd4627 /typedil- /FIC:\WinDDK\7600.16385.0\inc\api\warning.h /YlEXEAnalyzer /YcStdAfx.h /Fpf:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\StdAfx.pch /Fo"f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\StdAfx.obj" /Tp
+1>#include "stdafx.h"
+1>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>cl /MT
+1> /U_MT
+1> /Ii386
+1> /I.
+1> /If:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\crt
+1> /D_X86_=1
+1> /Di386=1
+1> /DSTD_CALL
+1> /DCONDITION_HANDLING=1
+1> /DNT_UP=1
+1> /DNT_INST=0
+1> /DWIN32=100
+1> /D_NT1X_=100
+1> /DWINNT=1
+1> /D_WIN32_WINNT=0x0502
+1> /DWINVER=0x0502
+1> /D_WIN32_IE=0x0603
+1> /DWIN32_LEAN_AND_MEAN=1
+1> /DDEVL=1
+1> /DDBG=1
+1> /D__BUILDMACHINE__=WinDDK
+1> /DFPO=0
+1> /DCODE_OS_NT_DRV
+1> /DCODE_ALLOC_USER_HEAP
+1> /DDEPRECATE_DDK_FUNCTIONS=1
+1> /DMSC_NOOPT
+1> /DNTDDI_VERSION=0x05020100
+1> /c
+1> /Zc:wchar_t-
+1> /Zl
+1> /Zp8
+1> /Gy
+1> /Gm-
+1> -cbstring
+1> /W3
+1> /Gz
+1> /hotpatch
+1> /EHs-c-
+1> /GR-
+1> /GF
+1> /GS
+1> /Z7
+1> /Od
+1> /Oi
+1> /Oy-
+1> /Z7
+1> /DKMDF_MAJOR_VERSION_STRING=01
+1> /DKMDF_MINOR_VERSION_STRING=009
+1> /wd4603
+1> /wd4627
+1> /typedil-
+1> /FIC:\WinDDK\7600.16385.0\inc\api\warning.h
+1> /YlEXEAnalyzer /Ycstdafx.h /Fpf:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\StdAfx.pch /Fo"f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\StdAfx.obj"
+1>pch_hdr.src
+1> C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrcl @f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\cl.rsp
+1>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>cl /Fo"f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386/"
+1> /FC
+1> /MT
+1> /U_MT
+1> /Ii386
+1> /I.
+1> /If:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\crt
+1> /D_X86_=1
+1> /Di386=1
+1> /DSTD_CALL
+1> /DCONDITION_HANDLING=1
+1> /DNT_UP=1
+1> /DNT_INST=0
+1> /DWIN32=100
+1> /D_NT1X_=100
+1> /DWINNT=1
+1> /D_WIN32_WINNT=0x0502
+1> /DWINVER=0x0502
+1> /D_WIN32_IE=0x0603
+1> /DWIN32_LEAN_AND_MEAN=1
+1> /DDEVL=1
+1> /DDBG=1
+1> /D__BUILDMACHINE__=WinDDK
+1> /DFPO=0
+1> /DCODE_OS_NT_DRV
+1> /DCODE_ALLOC_USER_HEAP
+1> /DDEPRECATE_DDK_FUNCTIONS=1
+1> /DMSC_NOOPT
+1> /DNTDDI_VERSION=0x05020100
+1> /c
+1> /Zc:wchar_t-
+1> /Zl
+1> /Zp8
+1> /Gy
+1> /Gm-
+1> -cbstring
+1> /W3
+1> /Gz
+1> /hotpatch
+1> /EHs-c-
+1> /GR-
+1> /GF
+1> /GS
+1> /Z7
+1> /Od
+1> /Oi
+1> /Oy-
+1> /Z7
+1> /DKMDF_MAJOR_VERSION_STRING=01
+1> /DKMDF_MINOR_VERSION_STRING=009
+1> /wd4603
+1> /wd4627
+1> /typedil-
+1> /FIC:\WinDDK\7600.16385.0\inc\api\warning.h
+1> /Yustdafx.h
+1> /Fpf:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\StdAfx.pch
+1> .\filetype.cpp .\instrsym.cpp .\inteldis.cpp .\mzfile.cpp .\pefile.cpp .\dbgmodule.cpp .\debugger.cpp .\x86debugger.cpp .\codedoc.cpp 
+1>filetype.cpp
+1>instrsym.cpp
+1>inteldis.cpp
+1>mzfile.cpp
+1>pefile.cpp
+1>dbgmodule.cpp
+1>debugger.cpp
+1>x86debugger.cpp
+1>codedoc.cpp
+1>Generating Code...
+1> C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrlink /lib /out:Obj\i386\EXEAnalyzer.lib /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221  /WX /nodefaultlib /machine:ix86 @f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\lib.rsp
+1>Microsoft (R) Library Manager Version 9.00.30729.207
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\StdAfx.obj 
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\filetype.obj 
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\instrsym.obj 
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\inteldis.obj 
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\mzfile.obj 
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\pefile.obj 
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\dbgmodule.obj 
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\debugger.obj 
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\x86debugger.obj 
+1>f:\syserdbg\project\exeanalyzer\source\objchk_wnet_x86\i386\codedoc.obj 

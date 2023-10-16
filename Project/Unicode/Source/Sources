@@ -1,0 +1,75 @@
+TARGETNAME=Unicode
+TARGETPATH=Obj
+TARGETTYPE=DRIVER_LIBRARY
+
+PRECOMPILED_CXX=1
+PRECOMPILED_INCLUDE=StdAfx.h
+SOURCES=	casemap.cpp	\
+			compose.cpp	\
+			cptable.cpp	\
+			c_037.cpp	\
+			c_042.cpp	\
+			c_10000.cpp	\
+			c_10006.cpp	\
+			c_10007.cpp	\
+			c_10029.cpp	\
+			c_1006.cpp	\
+			c_10079.cpp	\
+			c_10081.cpp	\
+			c_1026.cpp	\
+			c_1250.cpp	\
+			c_1251.cpp	\
+			c_1252.cpp	\
+			c_1253.cpp	\
+			c_1254.cpp	\
+			c_1255.cpp	\
+			c_1256.cpp	\
+			c_1257.cpp	\
+			c_1258.cpp	\
+			c_20866.cpp	\
+			c_20932.cpp	\
+			c_28591.cpp	\
+			c_28592.cpp	\
+			c_28593.cpp	\
+			c_28594.cpp	\
+			c_28595.cpp	\
+			c_28596.cpp	\
+			c_28597.cpp	\
+			c_28598.cpp	\
+			c_28599.cpp	\
+			c_28600.cpp	\
+			c_28603.cpp	\
+			c_28604.cpp	\
+			c_28605.cpp	\
+			c_28606.cpp	\
+			c_424.cpp	\
+			c_437.cpp	\
+			c_500.cpp	\
+			c_737.cpp	\
+			c_775.cpp	\
+			c_850.cpp	\
+			c_852.cpp	\
+			c_855.cpp	\
+			c_856.cpp	\
+			c_857.cpp	\
+			c_860.cpp	\
+			c_861.cpp	\
+			c_862.cpp	\
+			c_863.cpp	\
+			c_864.cpp	\
+			c_865.cpp	\
+			c_866.cpp	\
+			c_869.cpp	\
+			c_874.cpp	\
+			c_875.cpp	\
+			c_878.cpp	\
+			c_932.cpp	\
+			c_936.cpp	\
+			c_949.cpp	\
+			c_950.cpp	\
+			mbtowc.cpp	\
+			string.cpp	\
+			utf8.cpp	\
+			wctomb.cpp	\
+			wctype.cpp
+

@@ -1,0 +1,13 @@
+TARGETNAME=SysLang
+TARGETPATH=..\..\..\Bin
+TARGETTYPE=DRIVER
+
+C_DEFINES = $(C_DEFINES) /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP
+
+PRECOMPILED_CXX=1
+PRECOMPILED_INCLUDE=StdAfx.h
+
+TARGETLIBS	=	..\..\Unicode\Source\Obj\i386\Unicode.lib
+SOURCES	=	SysLang.cpp\
+			SyserLanguage.rc
+			

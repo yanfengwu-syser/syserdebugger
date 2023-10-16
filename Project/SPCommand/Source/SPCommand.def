@@ -1,0 +1,7 @@
+NAME SPCommand.sys
+EXPORTS
+    DllInitialize PRIVATE
+    DllUnload     PRIVATE
+	OnDebuggerOpen
+	OnDebuggerClose
+	OnDebuggerPlunge

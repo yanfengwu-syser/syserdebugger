@@ -1,0 +1,20 @@
+TARGETNAME=EXEAnalyzer
+TARGETPATH=Obj
+TARGETTYPE=DRIVER_LIBRARY
+
+C_DEFINES = $(C_DEFINES) /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP
+
+PRECOMPILED_CXX=1
+PRECOMPILED_INCLUDE=StdAfx.h
+PRECOMPILED_PCH=StdAfx.pch
+PRECOMPILED_OBJ=StdAfx.obj
+
+SOURCES=FileType.cpp		\
+		InstrSym.cpp		\
+		IntelDis.cpp		\
+		MZFile.cpp			\
+		PEFile.cpp			\
+		DbgModule.cpp		\
+		Debugger.cpp		\
+		X86Debugger.cpp		\
+		CodeDoc.cpp

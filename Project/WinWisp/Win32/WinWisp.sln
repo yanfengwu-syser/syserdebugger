@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinWisp", "WinWisp.vcproj", "{142E5B2E-BB1F-42A2-B357-81F97F85F86E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{142E5B2E-BB1F-42A2-B357-81F97F85F86E}.Debug.ActiveCfg = Debug|Win32
+		{142E5B2E-BB1F-42A2-B357-81F97F85F86E}.Debug.Build.0 = Debug|Win32
+		{142E5B2E-BB1F-42A2-B357-81F97F85F86E}.Release.ActiveCfg = Release|Win32
+		{142E5B2E-BB1F-42A2-B357-81F97F85F86E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

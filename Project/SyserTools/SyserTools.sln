@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SyserTools", "SyserTools.vcproj", "{FBA9CAEC-68EB-4975-9A65-0EBB4A0B82D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E50360C3-A8D9-4582-A0B8-0F8F88467113} = {E50360C3-A8D9-4582-A0B8-0F8F88467113}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Code", "..\Code\Win32\Code.vcproj", "{E50360C3-A8D9-4582-A0B8-0F8F88467113}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Trial|Win32 = Trial|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBA9CAEC-68EB-4975-9A65-0EBB4A0B82D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FBA9CAEC-68EB-4975-9A65-0EBB4A0B82D9}.Debug|Win32.Build.0 = Debug|Win32
+		{FBA9CAEC-68EB-4975-9A65-0EBB4A0B82D9}.Release|Win32.ActiveCfg = Release|Win32
+		{FBA9CAEC-68EB-4975-9A65-0EBB4A0B82D9}.Release|Win32.Build.0 = Release|Win32
+		{FBA9CAEC-68EB-4975-9A65-0EBB4A0B82D9}.Trial|Win32.ActiveCfg = Release|Win32
+		{FBA9CAEC-68EB-4975-9A65-0EBB4A0B82D9}.Trial|Win32.Build.0 = Release|Win32
+		{E50360C3-A8D9-4582-A0B8-0F8F88467113}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E50360C3-A8D9-4582-A0B8-0F8F88467113}.Debug|Win32.Build.0 = Debug|Win32
+		{E50360C3-A8D9-4582-A0B8-0F8F88467113}.Release|Win32.ActiveCfg = Release|Win32
+		{E50360C3-A8D9-4582-A0B8-0F8F88467113}.Release|Win32.Build.0 = Release|Win32
+		{E50360C3-A8D9-4582-A0B8-0F8F88467113}.Trial|Win32.ActiveCfg = Trial|Win32
+		{E50360C3-A8D9-4582-A0B8-0F8F88467113}.Trial|Win32.Build.0 = Trial|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

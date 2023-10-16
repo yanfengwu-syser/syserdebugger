@@ -1,0 +1,30 @@
+ 驱动器 D 中的卷是 新加卷
+ 卷的序列号是 7468-1460
+
+ D:\Prg\Syser\pcre 的目录
+
+2005-07-09  03:02             7,212 chartables.c
+2005-07-09  03:02             6,047 dftables.c
+2005-07-09  03:02           164,156 pcre_compile.c
+2005-07-09  03:02             3,503 pcre_config.c
+2005-07-09  03:02            68,463 pcre_dfa_exec.c
+2005-07-09  03:02           114,388 pcre_exec.c
+2005-07-09  03:02             5,073 pcre_fullinfo.c
+2005-07-09  03:02            12,267 pcre_get.c
+2005-07-09  03:02             3,228 pcre_globals.c
+2005-07-09  03:02             3,925 pcre_info.c
+2005-07-09  03:02             5,455 pcre_maketables.c
+2005-07-09  03:02             3,058 pcre_ord2utf8.c
+2005-07-09  03:02            12,556 pcre_printint.c
+2005-07-09  03:02             3,383 pcre_refcount.c
+2005-07-09  03:02            14,853 pcre_study.c
+2005-07-09  03:02             4,632 pcre_tables.c
+2005-07-09  03:02             5,475 pcre_try_flipped.c
+2005-07-09  03:02             2,521 pcre_ucp_findchar.c
+2005-07-09  03:02             4,607 pcre_valid_utf8.c
+2005-07-09  03:02             2,629 pcre_version.c
+2005-07-09  03:02             4,260 pcre_xclass.c
+2005-07-21  05:20           468,271 ucptable.c
+2005-07-21  05:20             4,549 ucp_findchar.c
+              23 个文件        924,511 字节
+               0 个目录  2,005,565,440 可用字节

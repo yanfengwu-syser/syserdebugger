@@ -1,0 +1,49 @@
+#include "StdAfx.h"
+#include "CmdEditPage.h"
+
+enum CCmdEditPage::WISP_FORM_ID
+{
+	CMD_ID_VERSION_EDIT = WISP_ID_USER_START,
+};
+
+WISP_FORM_RES_ITEM CCmdEditPage::m_FormRes[]=
+{
+	{
+		WISP_CTRL_FORM,
+		{0,0,500,380},
+		WISP_ID_NULL,
+		WISP_WS_NULL,
+		WSTR("About Syser")
+	},
+	{
+		WISP_CTRL_STATIC_GROUP,
+		{5,5,300,350},
+		WISP_ID_NULL,
+		WISP_WS_NULL,
+		WSTR("File"),
+	},
+	{
+		WISP_CTRL_LIST,
+		{330,25,100,80},
+		CMD_ID_OPTION_LIST,
+		WISP_WS_THIN_BORDER|WISP_WLS_SELECTED_ALWAYS|WISP_WLS_VERT_LINE|WISP_WLS_HORZ_LINE,
+	},
+	{
+		WISP_CTRL_EDIT,
+		{17,25,275,315},
+		WISP_ID_NULL,
+		WISP_ES_LEFT | WISP_WS_BORDER | WISP_ES_MULTILINE | WISP_ES_WANTRETURN,
+		NULL,
+	},
+	{WISP_CTRL_NULL}
+};
+
+WISP_MSG_MAP_BEGIN(CCmdEditPage)
+	WISP_MSG_MAP(WISP_WM_FORM_CREATE,OnFormCreate)
+WISP_MSG_MAP_END(CWispForm)
+
+bool CCmdEditPage::OnFormCreate(IN WISP_MSG*pMsg)
+{
+	return true;
+}
+

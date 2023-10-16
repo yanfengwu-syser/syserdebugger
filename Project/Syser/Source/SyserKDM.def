@@ -1,0 +1,5 @@
+NAME Syser.sys
+EXPORTS
+	DllInitialize		PRIVATE
+	DllUnload			PRIVATE
+	gpSyserPluginUI

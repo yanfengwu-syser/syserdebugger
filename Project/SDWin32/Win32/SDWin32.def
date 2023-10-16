@@ -1,0 +1,4 @@
+EXPORTS
+	CreateDebugger
+	GetFileFilter
+	GetInfo

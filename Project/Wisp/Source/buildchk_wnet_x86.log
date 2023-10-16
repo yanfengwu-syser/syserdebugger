@@ -1,0 +1,216 @@
+0>Bad Path string: L'e:\ F '
+
+BUILD: Computing Include file dependencies:
+BUILD: Examining f:\syserdbg\project\wisp\source directory for files to compile.
+oacr invalidate root:x86chk /autocleanqueue
+1>Compiling f:\syserdbg\project\wisp\source *************
+1>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+1>f:\syserdbg\project\wisp\source: TARGETPATH is Obj
+1>BUILDMSG: _NT_TARGET_VERSION SET TO WS03
+1>C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrcl /MT /U_MT /Ii386 /I. /If:\syserdbg\project\wisp\source\objchk_wnet_x86\i386 /IC:\WinDDK\7600.16385.0\inc\api /IC:\WinDDK\7600.16385.0\inc\api /IC:\WinDDK\7600.16385.0\inc\ddk /IC:\WinDDK\7600.16385.0\inc\ddk /IC:\WinDDK\7600.16385.0\inc\crt /D_X86_=1 /Di386=1 /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1 /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0502 /DWINVER=0x0502 /D_WIN32_IE=0x0603 /DWIN32_LEAN_AND_MEAN=1 /DDEVL=1 /DDBG=1 /D__BUILDMACHINE__=WinDDK /DFPO=0 /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP /DDEPRECATE_DDK_FUNCTIONS=1 /DMSC_NOOPT /DNTDDI_VERSION=0x05020100 /c /Zc:wchar_t- /Zl /Zp8 /Gy /Gm- -cbstring /W3 /Gz /hotpatch /EHs-c- /GR- /GF /GS /Z7 /Od /Oi /Oy- /Z7 /DKMDF_MAJOR_VERSION_STRING=01 /DKMDF_MINOR_VERSION_STRING=009 /wd4603 /wd4627 /typedil- /FIC:\WinDDK\7600.16385.0\inc\api\warning.h /YlWisp /YcStdAfx.h /Fpf:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\StdAfx.pch /Fo"f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\StdAfx.obj" /Tp
+1>#include "stdafx.h"
+1>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>cl /MT
+1> /U_MT
+1> /Ii386
+1> /I.
+1> /If:\syserdbg\project\wisp\source\objchk_wnet_x86\i386
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\crt
+1> /D_X86_=1
+1> /Di386=1
+1> /DSTD_CALL
+1> /DCONDITION_HANDLING=1
+1> /DNT_UP=1
+1> /DNT_INST=0
+1> /DWIN32=100
+1> /D_NT1X_=100
+1> /DWINNT=1
+1> /D_WIN32_WINNT=0x0502
+1> /DWINVER=0x0502
+1> /D_WIN32_IE=0x0603
+1> /DWIN32_LEAN_AND_MEAN=1
+1> /DDEVL=1
+1> /DDBG=1
+1> /D__BUILDMACHINE__=WinDDK
+1> /DFPO=0
+1> /DCODE_OS_NT_DRV
+1> /DCODE_ALLOC_USER_HEAP
+1> /DDEPRECATE_DDK_FUNCTIONS=1
+1> /DMSC_NOOPT
+1> /DNTDDI_VERSION=0x05020100
+1> /c
+1> /Zc:wchar_t-
+1> /Zl
+1> /Zp8
+1> /Gy
+1> /Gm-
+1> -cbstring
+1> /W3
+1> /Gz
+1> /hotpatch
+1> /EHs-c-
+1> /GR-
+1> /GF
+1> /GS
+1> /Z7
+1> /Od
+1> /Oi
+1> /Oy-
+1> /Z7
+1> /DKMDF_MAJOR_VERSION_STRING=01
+1> /DKMDF_MINOR_VERSION_STRING=009
+1> /wd4603
+1> /wd4627
+1> /typedil-
+1> /FIC:\WinDDK\7600.16385.0\inc\api\warning.h
+1> /YlWisp /Ycstdafx.h /Fpf:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\StdAfx.pch /Fo"f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\StdAfx.obj"
+1>pch_hdr.src
+1> C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrcl @f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\cl.rsp
+1>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>cl /Fo"f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386/"
+1> /FC
+1> /MT
+1> /U_MT
+1> /Ii386
+1> /I.
+1> /If:\syserdbg\project\wisp\source\objchk_wnet_x86\i386
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\crt
+1> /D_X86_=1
+1> /Di386=1
+1> /DSTD_CALL
+1> /DCONDITION_HANDLING=1
+1> /DNT_UP=1
+1> /DNT_INST=0
+1> /DWIN32=100
+1> /D_NT1X_=100
+1> /DWINNT=1
+1> /D_WIN32_WINNT=0x0502
+1> /DWINVER=0x0502
+1> /D_WIN32_IE=0x0603
+1> /DWIN32_LEAN_AND_MEAN=1
+1> /DDEVL=1
+1> /DDBG=1
+1> /D__BUILDMACHINE__=WinDDK
+1> /DFPO=0
+1> /DCODE_OS_NT_DRV
+1> /DCODE_ALLOC_USER_HEAP
+1> /DDEPRECATE_DDK_FUNCTIONS=1
+1> /DMSC_NOOPT
+1> /DNTDDI_VERSION=0x05020100
+1> /c
+1> /Zc:wchar_t-
+1> /Zl
+1> /Zp8
+1> /Gy
+1> /Gm-
+1> -cbstring
+1> /W3
+1> /Gz
+1> /hotpatch
+1> /EHs-c-
+1> /GR-
+1> /GF
+1> /GS
+1> /Z7
+1> /Od
+1> /Oi
+1> /Oy-
+1> /Z7
+1> /DKMDF_MAJOR_VERSION_STRING=01
+1> /DKMDF_MINOR_VERSION_STRING=009
+1> /wd4603
+1> /wd4627
+1> /typedil-
+1> /FIC:\WinDDK\7600.16385.0\inc\api\warning.h
+1> /Yustdafx.h
+1> /Fpf:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\StdAfx.pch
+1> .\dibdata.cpp .\utility.cpp .\wispbase.cpp .\wispdrawhal.cpp .\wispbutton.cpp .\wisptoolbar.cpp .\wispdc.cpp .\wispdib.cpp .\wispdiblib.cpp .\wispedit.cpp .\wisphexwnd.cpp .\wisptabwnd.cpp .\wispwnd.cpp .\wispcolorstrwnd.cpp .\wispconsolewnd.cpp .\wispcheckbox.cpp .\wispfont.cpp .\wispmenu.cpp .\wispbasewnd.cpp .\wispmsgbox.cpp .\wispprogress.cpp .\wispdrawobj.cpp .\wispsplitwnd.cpp .\wispradiobox.cpp .\wispcombobox.cpp .\wispstatic.cpp .\wisplist.cpp .\wispinfownd.cpp .\wispsoftkeyboard.cpp .\wispmultitabview.cpp .\wispform.cpp .\wispcalcwnd.cpp .\wisptipwnd.cpp .\wispoptionform.cpp .\wispmisc.cpp .\wisprgbselect.cpp 
+1>dibdata.cpp
+1>utility.cpp
+1>wispbase.cpp
+1>wispdrawhal.cpp
+1>wispbutton.cpp
+1>wisptoolbar.cpp
+1>wispdc.cpp
+1>wispdib.cpp
+1>wispdiblib.cpp
+1>wispedit.cpp
+1>wisphexwnd.cpp
+1>wisptabwnd.cpp
+1>wispwnd.cpp
+1>wispcolorstrwnd.cpp
+1>wispconsolewnd.cpp
+1>wispcheckbox.cpp
+1>wispfont.cpp
+1>wispmenu.cpp
+1>wispbasewnd.cpp
+1>wispmsgbox.cpp
+1>Generating Code...
+1>Compiling...
+1>wispprogress.cpp
+1>wispdrawobj.cpp
+1>wispsplitwnd.cpp
+1>wispradiobox.cpp
+1>wispcombobox.cpp
+1>wispstatic.cpp
+1>wisplist.cpp
+1>wispinfownd.cpp
+1>wispsoftkeyboard.cpp
+1>wispmultitabview.cpp
+1>wispform.cpp
+1>wispcalcwnd.cpp
+1>wisptipwnd.cpp
+1>wispoptionform.cpp
+1>wispmisc.cpp
+1>wisprgbselect.cpp
+1>Generating Code...
+1> C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrlink /lib /out:Obj\i386\Wisp.lib /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221  /WX /nodefaultlib /machine:ix86 @f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\lib.rsp
+1>Microsoft (R) Library Manager Version 9.00.30729.207
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\StdAfx.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\dibdata.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\utility.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispbase.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispdrawhal.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispbutton.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wisptoolbar.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispdc.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispdib.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispdiblib.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispedit.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wisphexwnd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wisptabwnd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispwnd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispcolorstrwnd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispconsolewnd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispcheckbox.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispfont.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispmenu.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispbasewnd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispmsgbox.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispprogress.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispdrawobj.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispsplitwnd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispradiobox.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispcombobox.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispstatic.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wisplist.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispinfownd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispsoftkeyboard.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispmultitabview.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispform.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispcalcwnd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wisptipwnd.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispoptionform.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wispmisc.obj 
+1>f:\syserdbg\project\wisp\source\objchk_wnet_x86\i386\wisprgbselect.obj 

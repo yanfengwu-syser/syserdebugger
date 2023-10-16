@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="SPCommand"
+	ProjectGUID="{75DF46DE-CD34-4E1A-91D2-1537FF9FE41C}"
+	Keyword="MakeFileProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="0">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="ddkbuild.cmd -WXP chk ..\Source"
+				ReBuildCommandLine="ddkbuild.cmd -WXP chk ..\Source /a"
+				CleanCommandLine="clean.cmd $(ProjectName)"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="0">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="ddkbuild.cmd -WXP fre ..\Source"
+				ReBuildCommandLine="ddkbuild.cmd -WXP fre ..\Source /a"
+				CleanCommandLine="clean.cmd $(ProjectName)"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="..\Source\SPCommand.cpp">
+			</File>
+			<File
+				RelativePath="..\Source\StdAfx.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="..\Source\resource.h">
+			</File>
+			<File
+				RelativePath="..\Source\SPCommand.h">
+			</File>
+			<File
+				RelativePath="..\Source\StdAfx.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			<File
+				RelativePath="..\Source\SPCommand.rc">
+			</File>
+		</Filter>
+		<Filter
+			Name="Project Files"
+			Filter="">
+			<File
+				RelativePath=".\clean.cmd">
+			</File>
+			<File
+				RelativePath=".\ddkbuild.cmd">
+			</File>
+			<File
+				RelativePath="..\Source\MakeFile">
+			</File>
+			<File
+				RelativePath="..\Source\Sources">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,188 @@
+0>Bad Path string: L'e:\ F '
+
+BUILD: Computing Include file dependencies:
+BUILD: Examining f:\syserdbg\project\code\source directory for files to compile.
+oacr invalidate root:x86chk /autocleanqueue
+1>Compiling f:\syserdbg\project\code\source *************
+1>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+1>f:\syserdbg\project\code\source: TARGETPATH is Obj
+1>BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+1>C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrcl /MT /U_MT /Ii386 /I. /If:\syserdbg\project\code\source\objchk_wxp_x86\i386 /IC:\WinDDK\7600.16385.0\inc\api /IC:\WinDDK\7600.16385.0\inc\api /IC:\WinDDK\7600.16385.0\inc\ddk /IC:\WinDDK\7600.16385.0\inc\ddk /IC:\WinDDK\7600.16385.0\inc\crt /D_X86_=1 /Di386=1 /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1 /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0501 /DWINVER=0x0501 /D_WIN32_IE=0x0603 /DWIN32_LEAN_AND_MEAN=1 /DDEVL=1 /DDBG=1 /D__BUILDMACHINE__=WinDDK /DFPO=0 /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP /DDEPRECATE_DDK_FUNCTIONS=1 /DMSC_NOOPT /DNTDDI_VERSION=0x05010200 /c /Zc:wchar_t- /Zl /Zp8 /Gy /Gm- -cbstring /W3 /Gz /hotpatch /EHs-c- /GR- /GF /GS /Z7 /Od /Oi /Oy- /Z7 /DKMDF_MAJOR_VERSION_STRING=01 /DKMDF_MINOR_VERSION_STRING=009 /wd4603 /wd4627 /typedil- /FIC:\WinDDK\7600.16385.0\inc\api\warning.h /YlCode /YcStdAfx.h /Fpf:\syserdbg\project\code\source\objchk_wxp_x86\i386\StdAfx.pch /Fo"f:\syserdbg\project\code\source\objchk_wxp_x86\i386\StdAfx.obj" /Tp
+1>#include "stdafx.h"
+1>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>cl /MT
+1> /U_MT
+1> /Ii386
+1> /I.
+1> /If:\syserdbg\project\code\source\objchk_wxp_x86\i386
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\crt
+1> /D_X86_=1
+1> /Di386=1
+1> /DSTD_CALL
+1> /DCONDITION_HANDLING=1
+1> /DNT_UP=1
+1> /DNT_INST=0
+1> /DWIN32=100
+1> /D_NT1X_=100
+1> /DWINNT=1
+1> /D_WIN32_WINNT=0x0501
+1> /DWINVER=0x0501
+1> /D_WIN32_IE=0x0603
+1> /DWIN32_LEAN_AND_MEAN=1
+1> /DDEVL=1
+1> /DDBG=1
+1> /D__BUILDMACHINE__=WinDDK
+1> /DFPO=0
+1> /DCODE_OS_NT_DRV
+1> /DCODE_ALLOC_USER_HEAP
+1> /DDEPRECATE_DDK_FUNCTIONS=1
+1> /DMSC_NOOPT
+1> /DNTDDI_VERSION=0x05010200
+1> /c
+1> /Zc:wchar_t-
+1> /Zl
+1> /Zp8
+1> /Gy
+1> /Gm-
+1> -cbstring
+1> /W3
+1> /Gz
+1> /hotpatch
+1> /EHs-c-
+1> /GR-
+1> /GF
+1> /GS
+1> /Z7
+1> /Od
+1> /Oi
+1> /Oy-
+1> /Z7
+1> /DKMDF_MAJOR_VERSION_STRING=01
+1> /DKMDF_MINOR_VERSION_STRING=009
+1> /wd4603
+1> /wd4627
+1> /typedil-
+1> /FIC:\WinDDK\7600.16385.0\inc\api\warning.h
+1> /YlCode /Ycstdafx.h /Fpf:\syserdbg\project\code\source\objchk_wxp_x86\i386\StdAfx.pch /Fo"f:\syserdbg\project\code\source\objchk_wxp_x86\i386\StdAfx.obj"
+1>pch_hdr.src
+1> C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrcl @f:\syserdbg\project\code\source\objchk_wxp_x86\i386\cl.rsp
+1>Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.207 for 80x86
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>cl /Fo"f:\syserdbg\project\code\source\objchk_wxp_x86\i386/"
+1> /FC
+1> /MT
+1> /U_MT
+1> /Ii386
+1> /I.
+1> /If:\syserdbg\project\code\source\objchk_wxp_x86\i386
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\api
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\ddk
+1> /IC:\WinDDK\7600.16385.0\inc\crt
+1> /D_X86_=1
+1> /Di386=1
+1> /DSTD_CALL
+1> /DCONDITION_HANDLING=1
+1> /DNT_UP=1
+1> /DNT_INST=0
+1> /DWIN32=100
+1> /D_NT1X_=100
+1> /DWINNT=1
+1> /D_WIN32_WINNT=0x0501
+1> /DWINVER=0x0501
+1> /D_WIN32_IE=0x0603
+1> /DWIN32_LEAN_AND_MEAN=1
+1> /DDEVL=1
+1> /DDBG=1
+1> /D__BUILDMACHINE__=WinDDK
+1> /DFPO=0
+1> /DCODE_OS_NT_DRV
+1> /DCODE_ALLOC_USER_HEAP
+1> /DDEPRECATE_DDK_FUNCTIONS=1
+1> /DMSC_NOOPT
+1> /DNTDDI_VERSION=0x05010200
+1> /c
+1> /Zc:wchar_t-
+1> /Zl
+1> /Zp8
+1> /Gy
+1> /Gm-
+1> -cbstring
+1> /W3
+1> /Gz
+1> /hotpatch
+1> /EHs-c-
+1> /GR-
+1> /GF
+1> /GS
+1> /Z7
+1> /Od
+1> /Oi
+1> /Oy-
+1> /Z7
+1> /DKMDF_MAJOR_VERSION_STRING=01
+1> /DKMDF_MINOR_VERSION_STRING=009
+1> /wd4603
+1> /wd4627
+1> /typedil-
+1> /FIC:\WinDDK\7600.16385.0\inc\api\warning.h
+1> /Yustdafx.h
+1> /Fpf:\syserdbg\project\code\source\objchk_wxp_x86\i386\StdAfx.pch
+1> .\ntdrvruntime.cpp .\fileio.cpp .\fileiontdrv.cpp .\handle.cpp .\imagefile.cpp .\logfile.cpp .\maths.cpp .\txtfile.cpp .\strmem.cpp .\sysdep.cpp .\newalloc.cpp .\newallocntdrv.cpp .\debugnewalloc.cpp .\debugnewallocntdrv.cpp .\compress.cpp .\cmdparser.cpp .\polyfs.cpp .\pagemem.cpp .\heap.cpp .\float2string.cpp .\crc.cpp .\optionvalue.cpp 
+1>ntdrvruntime.cpp
+1>fileio.cpp
+1>fileiontdrv.cpp
+1>handle.cpp
+1>imagefile.cpp
+1>logfile.cpp
+1>maths.cpp
+1>txtfile.cpp
+1>strmem.cpp
+1>sysdep.cpp
+1>newalloc.cpp
+1>newallocntdrv.cpp
+1>debugnewalloc.cpp
+1>debugnewallocntdrv.cpp
+1>compress.cpp
+1>cmdparser.cpp
+1>polyfs.cpp
+1>pagemem.cpp
+1>heap.cpp
+1>float2string.cpp
+1>Generating Code...
+1>Compiling...
+1>crc.cpp
+1>optionvalue.cpp
+1>Generating Code...
+1> C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrlink /lib /out:Obj\i386\Code.lib /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221  /WX /nodefaultlib /machine:ix86 @f:\syserdbg\project\code\source\objchk_wxp_x86\i386\lib.rsp
+1>Microsoft (R) Library Manager Version 9.00.30729.207
+1>Copyright (C) Microsoft Corporation.  All rights reserved.
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\StdAfx.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\ntdrvruntime.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\fileio.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\fileiontdrv.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\handle.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\imagefile.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\logfile.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\maths.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\txtfile.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\strmem.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\sysdep.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\newalloc.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\newallocntdrv.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\debugnewalloc.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\debugnewallocntdrv.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\compress.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\cmdparser.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\polyfs.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\pagemem.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\heap.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\float2string.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\crc.obj 
+1>f:\syserdbg\project\code\source\objchk_wxp_x86\i386\optionvalue.obj 

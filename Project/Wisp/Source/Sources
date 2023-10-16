@@ -1,0 +1,49 @@
+TARGETNAME=Wisp
+TARGETPATH=Obj
+TARGETTYPE=DRIVER_LIBRARY
+
+C_DEFINES = $(C_DEFINES) /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP
+
+PRECOMPILED_CXX=1
+PRECOMPILED_INCLUDE=StdAfx.h
+PRECOMPILED_PCH=StdAfx.pch
+PRECOMPILED_OBJ=StdAfx.obj
+
+SOURCES=DIBData.cpp				\
+		Utility.cpp				\
+		WispBase.cpp			\
+		WispDrawHAL.cpp			\
+		WispButton.cpp			\
+		WispToolbar.cpp			\
+		WispDC.cpp				\
+		WispDIB.cpp				\
+		WispDIBLib.cpp			\
+		WispEdit.cpp			\
+		WispHexWnd.cpp			\
+		WispTabWnd.cpp			\
+		WispWnd.cpp				\
+		WispColorStrWnd.cpp		\
+		WispConsoleWnd.cpp		\
+		WispCheckBox.cpp		\
+		WispFont.cpp			\
+		WispMenu.cpp			\
+		WispBaseWnd.cpp			\
+		WispMsgBox.cpp			\
+		WispProgress.cpp		\
+		WispDrawObj.cpp			\
+		WispSplitWnd.cpp		\
+		WispRadioBox.cpp		\
+		WispComboBox.cpp		\
+		WispStatic.cpp			\
+		WispList.cpp			\
+		WispInfoWnd.cpp			\
+		WispSoftKeyboard.cpp	\
+		WispMultiTabView.cpp	\
+		WispForm.cpp			\
+		WispCalcWnd.cpp			\
+		WispTipWnd.cpp			\
+		WispOptionForm.cpp		\
+		WispMisc.cpp			\
+		WispRGBSelect.cpp
+
+

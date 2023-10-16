@@ -1,0 +1,166 @@
+TARGETNAME=Syser
+TARGETPATH=..\..\..\Bin
+TARGETTYPE=EXPORT_DRIVER
+
+C_DEFINES = $(C_DEFINES) /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP /D_SYSER_
+
+!if defined(__DEMO__VERSION__)
+C_DEFINES = $(C_DEFINES) /D__DEMO__VERSION__
+!endif
+
+
+DLLDEF=SyserKDM.def
+PRECOMPILED_CXX=1
+PRECOMPILED_INCLUDE=StdAfx.h
+PRECOMPILED_PCH=StdAfx.pch
+PRECOMPILED_OBJ=StdAfx.obj
+
+TARGETLIBS=	..\..\EXEAnalyzer\Source\Obj\i386\EXEAnalyzer.lib	\
+			..\..\Code\Source\Obj\i386\Code.lib		\
+			..\..\Wisp\Source\Obj\i386\Wisp.lib		\
+			..\..\..\Addition\BootVid\bootvid.lib	\
+			$(DDK_LIB_PATH)\libcntpr.lib \
+			$(DDK_LIB_PATH)\ntstrsafe.lib
+			
+
+INCLUDES =	..\..\..\Addition\SyserDebugger
+
+SOURCES=NTUtility.cpp		\
+		Resource.cpp		\
+		Syser.cpp			\
+		InputDriver.cpp		\
+		SyserNTDrvApp.cpp	\
+		DbgProcess.cpp		\
+		X86Optr.cpp			\
+		Services.cpp		\
+		SysInfo.cpp			\
+		ConsoleWnd.cpp		\
+		MainFrame.cpp		\
+		MultiDataView.cpp	\
+		MultiCodeView.cpp	\
+		CodeView.cpp		\
+		DataView.cpp		\
+		VideoDriver.cpp		\
+		OSData.cpp			\
+		pci.cpp				\
+		IDTWnd.cpp			\
+		GDTWnd.cpp			\
+		PageMapWnd.cpp		\
+		RegHelpWnd.cpp		\
+		SerialPort.cpp		\
+		ProcessList.cpp		\
+		GeneRegList.cpp		\
+		FpuRegisterList.cpp	\
+		SSERegisterList.cpp	\
+		WatchList.cpp		\
+		StackWatchList.cpp	\
+		ObjectDirectory.cpp	\
+		X86RegHelpTabWnd.cpp	\
+		ObjectDirectoryWnd.cpp	\
+		SystemExplorer.cpp	\
+		SourceExplorer.cpp	\
+		GameSpy.cpp			\
+		SyserUI.cpp			\
+		DebuggerSelectForm.cpp	\
+		PluginListForm.cpp	\
+		SyserConfig.cpp		\
+		SourceDebugFrameWnd.cpp	\
+		MultiSourceCodeView.cpp		\
+		SourceCodeWnd.cpp	\
+		SyserSymAnalyzer.cpp	\
+		SyserOption.cpp		\
+		SyserMemoryReadWrite.cpp	\
+		SourceDebugClassView.cpp	\
+		Lex2.cpp		\
+		MultiCPU.cpp		\
+		SyserConnect.cpp	\
+		NMIInterruptHandle.cpp	\
+		InterruptPatch.cpp	\
+		LocalAPIC.cpp		\
+		IOAPIC.cpp		\
+		SDServer.cpp		\
+		PIC_8259.cpp		\
+		TimerInterrupt.cpp	\
+		HardWareInterruptCtrl.cpp	\
+		SerialMouse.cpp		\
+		Mouse.cpp		\
+		PS2Mouse.cpp		\
+		UHCIDevice.cpp		\
+		OHCIDevice.cpp		\
+		Int3.cpp		\
+		Int1.cpp		\
+		DataOperatorDlg.cpp	\
+		AddTypeViewerDlg.cpp	\
+		SearchDialog.cpp	\
+		PCSystem.cpp		\
+		SyserCmd.cpp		\
+		BpintCmd.cpp		\
+		DebugCmd.cpp		\
+		OtherCmd.cpp		\
+		USBCmd.cpp			\
+		Keyboard.cpp		\
+		TouchPad.cpp		\
+		TrackPoint.cpp		\
+		CrossReferenceForm.cpp	\
+		RunTrace.cpp		\
+		RunTraceWnd.cpp		\
+		ModuleListWnd.cpp	\
+		ThreadListWnd.cpp	\
+		CallStackWnd.cpp	\
+		CallStack.cpp		\
+		ShareCmd.cpp		\
+		FunctionListWnd.cpp	\
+		ErrorCodeWnd.cpp	\
+		ErrorCodeTable.cpp	\
+		NtstatStr.cpp		\
+		SystemIoctl.cpp		\
+		SEHChainWnd.cpp		\
+		Initialize.cpp		\
+		GlobalVariable.cpp	\
+		ColorOption.cpp		\
+		VMWareSupport.cpp	\
+		BugCheckCode.cpp	\
+		int0xd.cpp		\
+		int0xe.cpp		\
+		int0x6.cpp		\
+		int0xc.cpp		\
+		int0xb.cpp		\
+		SDSModuleList.cpp	\
+		SourceCodeWatchList.cpp	\
+		CommentList.cpp		\
+		TypeViewerWnd.cpp	\
+		DataViewForm.cpp	\
+		SyserDriver.rc		\
+		VirtualPCSupport.cpp	\
+		BreakPointForm.cpp	\
+		CodeBPEdit.cpp		\
+		DataBPEdit.cpp		\
+		CopyOnWritePatch.cpp	\
+		Dump.cpp		\
+		StringReference.cpp	\
+		SyserAboutForm.cpp	\
+		PEExplorer.cpp		\
+		Cmd_CPUID.cpp		\
+		Cmd_CPU.cpp		\
+		cmd_msr.cpp		\
+		IBMAsciiWnd.cpp		\
+		KeyMappingPage.cpp	\
+		KernelObjectCmd.cpp	\
+		Analyzer.cpp		\
+		HwndCmd.cpp		\
+		HwndWnd.cpp		\
+		OSProcessThread.cpp	\
+		WndStringReference.cpp	\
+		LastBranch.cpp		\
+		PatchKeBugCheckEx.cpp	\
+		SyserCAbi.cpp	\
+		SyserDriverMC.mc
+		
+AMD64_SOURCES=..\
+    common-amd64.asm
+
+I386_SOURCES=\
+    common-x86.asm \
+    interrupt-x86.asm \
+    compatibility-x86.asm \
+    Function.asm

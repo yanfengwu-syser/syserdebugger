@@ -1,0 +1,6 @@
+*diaguids*.lib
+*bootvid.lib
+.\Bin\i386\*.sys
+.\Bin\i386\*.dll
+.\Bin\i386\SyserApp.exe
+.\Bin\i386\Syser.exe

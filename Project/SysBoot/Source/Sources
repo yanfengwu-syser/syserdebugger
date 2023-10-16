@@ -1,0 +1,19 @@
+TARGETNAME=SysBoot
+TARGETPATH=..\..\..\Bin
+TARGETTYPE=DRIVER
+
+C_DEFINES = $(C_DEFINES) /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP
+
+PRECOMPILED_CXX=1
+PRECOMPILED_INCLUDE=StdAfx.h
+
+TARGETLIBS=	..\..\Code\Source\Obj\i386\Code.lib \
+			..\..\..\Addition\BootVid\bootvid.lib \
+			$(DDK_LIB_PATH)\libcntpr.lib
+
+SOURCES=SysBoot.cpp	\
+		VistaVideoHook.cpp	\
+		VideoHook.cpp	\
+		PromptQuit.cpp\
+		SyserBoot.rc\
+		ScrOutput.cpp

@@ -1,0 +1,173 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SymRecv.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SymRecv.ico"
+IDI_ICON_SYSER          ICON                    "res\\Syser.ico"
+IDI_ICON_SITE           ICON                    "res\\site.ico"
+IDI_ICON_PDB            ICON                    "res\\pdb.ico"
+IDI_ICON_SDS            ICON                    "res\\sds.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_RT_MANIFEST         RT_MANIFEST             "res\\SymRecv.manifest"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SYMRECV_DIALOG DIALOGEX 0, 0, 362, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | 
+    WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Syser Symbol Receiver"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Module List",IDC_STATIC,6,3,349,120
+    LTEXT           "Symbol Site",IDC_STATIC,43,142,45,8
+    LTEXT           "Download PDB Path",IDC_STATIC,43,166,64,8
+    LTEXT           "Converted SDS Path",IDC_STATIC,43,192,66,8
+    EDITTEXT        IDC_EDIT_SYM_SITE,116,140,160,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PDB_PATH,116,165,160,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SDS_PATH,116,190,160,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Add",IDC_BUTTON_ADD,297,44,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE,297,64,50,14
+    PUSHBUTTON      "Get Symbols",IDC_BUTTON_GET_SYM,297,84,50,14
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,297,102,50,14
+    PUSHBUTTON      "Reset",IDC_BUTTON_RESET,285,140,61,14
+    PUSHBUTTON      "Change",IDC_BUTTON_BROWSE_PDB,285,165,36,14
+    PUSHBUTTON      "Change",IDC_BUTTON_BROWSE_SDS,285,190,36,14
+    GROUPBOX        "Download Setting",IDC_STATIC,6,125,349,87
+    ICON            IDI_ICON_SYSER,IDC_STATIC,310,19,21,20
+    PUSHBUTTON      "Open",IDC_BUTTON_PDB_OPEN,323,165,23,14
+    PUSHBUTTON      "Open",IDC_BUTTON_SDS_OPEN,323,190,23,14
+    CONTROL         "",IDC_LIST_MODULE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    12,15,277,102
+    ICON            IDI_ICON_SITE,IDC_STATIC,13,136,20,20
+    ICON            IDI_ICON_PDB,IDC_STATIC,13,161,20,20
+    ICON            IDI_ICON_SDS,IDC_STATIC,13,185,20,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SYMRECV_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SymRecv.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

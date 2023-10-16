@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SyserPluginDemo", "SyserPluginDemo.vcproj", "{1DD36439-F24B-49AB-93F2-4F03FAAFFE1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1DD36439-F24B-49AB-93F2-4F03FAAFFE1E}.Debug.ActiveCfg = Debug|Win32
+		{1DD36439-F24B-49AB-93F2-4F03FAAFFE1E}.Debug.Build.0 = Debug|Win32
+		{1DD36439-F24B-49AB-93F2-4F03FAAFFE1E}.Release.ActiveCfg = Release|Win32
+		{1DD36439-F24B-49AB-93F2-4F03FAAFFE1E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

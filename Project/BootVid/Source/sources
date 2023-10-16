@@ -1,0 +1,12 @@
+TARGETNAME=bootvid
+TARGETPATH=obj
+TARGETTYPE=EXPORT_DRIVER
+
+#TARGETLIBS= ... any libraries you need ...
+
+#INCLUDES= ... any include files you need ...
+
+SOURCES=bootvid.cpp \
+        bootvid.rc
+        
+DLLDEF= bootvid.def

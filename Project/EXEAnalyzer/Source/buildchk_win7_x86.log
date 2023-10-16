@@ -1,0 +1,9 @@
+BUILD: Examining d:\syserdbg\project\exeana~1\source directory for files to compile.
+oacr invalidate root:x86chk /autocleanqueue
+1>Compiling d:\syserdbg\project\exeana~1\source *************
+1>'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+1>d:\syserdbg\project\exeana~1\source: TARGETPATH is Obj
+1>C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrcl /MT /U_MT /Ii386 /I. /Id:\syserdbg\project\exeana~1\source\objchk_win7_x86\i386 /IC:\WinDDK\7600.16385.0\inc\api /IC:\WinDDK\7600.16385.0\inc\api /IC:\WinDDK\7600.16385.0\inc\ddk /IC:\WinDDK\7600.16385.0\inc\ddk /IC:\WinDDK\7600.16385.0\inc\crt /D_X86_=1 /Di386=1 /DSTD_CALL /DCONDITION_HANDLING=1 /DNT_UP=1 /DNT_INST=0 /DWIN32=100 /D_NT1X_=100 /DWINNT=1 /D_WIN32_WINNT=0x0601 /DWINVER=0x0601 /D_WIN32_IE=0x0800 /DWIN32_LEAN_AND_MEAN=1 /DDEVL=1 /DDBG=1 /D__BUILDMACHINE__=WinDDK /DFPO=0 /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP /DDEPRECATE_DDK_FUNCTIONS=1 /DMSC_NOOPT /DNTDDI_VERSION=0x06010000 /c /Zc:wchar_t- /Zl /Zp8 /Gy /Gm- -cbstring /W3 /Gz /hotpatch /EHs-c- /GR- /GF /GS /Z7 /Od /Oi /Oy- /Z7 /DKMDF_MAJOR_VERSION_STRING=01 /DKMDF_MINOR_VERSION_STRING=009 /wd4603 /wd4627 /typedil- /FIC:\WinDDK\7600.16385.0\inc\api\warning.h /YlEXEAnalyzer /YcStdAfx.h /Fpd:\syserdbg\project\exeana~1\source\objchk_win7_x86\i386\StdAfx.pch /Fo"d:\syserdbg\project\exeana~1\source\objchk_win7_x86\i386\StdAfx.obj" /Tp
+1>#include "stdafx.h"
+1> C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrcl @d:\syserdbg\project\exeana~1\source\objchk_win7_x86\i386\cl.rsp
+1> C:\WinDDK\7600.16385.0\Bin\x86\oacr\oacrlink /lib /out:Obj\i386\EXEAnalyzer.lib /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221  /WX /nodefaultlib /machine:ix86 @d:\syserdbg\project\exeana~1\source\objchk_win7_x86\i386\lib.rsp

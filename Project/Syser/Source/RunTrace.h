@@ -1,0 +1,75 @@
+#ifndef _RUN_TRACE_H_
+#define _RUN_TRACE_H_
+
+typedef struct _STRUNSTRACE
+{
+	ULPOS CodeViewStartAddress;
+	WORD EIPOffset;
+	WORD CodeViewIndex;
+}STRUNTRACE,*PSTRUNTRACE;
+
+enum
+{
+	EAX_MODIFY_BIT_MASK= 1,
+	EBX_MODIFY_BIT_MASK= 2,
+	ECX_MODIFY_BIT_MASK= 4,
+	EDX_MODIFY_BIT_MASK= 8,
+	ESP_MODIFY_BIT_MASK= 0x10,
+	EBP_MODIFY_BIT_MASK= 0x20,
+	ESI_MODIFY_BIT_MASK= 0x40,
+	EDI_MODIFY_BIT_MASK= 0x80,
+	EFL_MODIFY_BIT_MASK= 0x100,
+	EIP_MODIFY_BIT_MASK= 0x200,
+	ES_MODIFY_BIT_MASK= 0x400,
+	CS_MODIFY_BIT_MASK= 0x800,
+	DS_MODIFY_BIT_MASK= 0x1000,
+	FS_MODIFY_BIT_MASK= 0x2000,
+	GS_MODIFY_BIT_MASK= 0x4000,
+	SS_MODIFY_BIT_MASK= 0x8000,
+	CR0_MODIFY_BIT_MASK= 0x10000,
+	CR1_MODIFY_BIT_MASK= 0x20000,
+	CR2_MODIFY_BIT_MASK= 0x40000,
+	CR3_MODIFY_BIT_MASK= 0x80000,
+	CR4_MODIFY_BIT_MASK= 0x100000,
+	DR0_MODIFY_BIT_MASK= 0x200000,
+	DR1_MODIFY_BIT_MASK= 0x400000,
+	DR2_MODIFY_BIT_MASK= 0x800000,
+	DR3_MODIFY_BIT_MASK= 0x1000000,
+	DR4_MODIFY_BIT_MASK= 0x2000000,
+	DR5_MODIFY_BIT_MASK= 0x4000000,
+	DR6_MODIFY_BIT_MASK= 0x8000000,
+	DR7_MODIFY_BIT_MASK= 0x10000000,
+};
+
+class CRunTrace
+{
+	ULSIZE	m_MaxCount;
+	ULPOS	m_CurIndex;
+	PSTRUNTRACE m_pRunTrace;
+	bool		m_bFirstInsert;
+	ULPOS m_MoveIndex;
+	ULPOS m_CurrentModifyIndex;
+	ULPOS m_MoveModifyIndex;
+	ULPOS m_FirstRegIndex; 
+	ULPOS m_FirstRegModifyRegister;
+	X86_REG_CONTEXT m_FirstReg;
+	X86_REG_CONTEXT m_CurrentReg;
+	DWORD* m_RegisterModifyMap;
+	DWORD* m_ModifyRegister;
+	DWORD m_Count;
+	
+public:
+	CRunTrace();
+	void GetRegisterContext(DWORD Offset,X86_REG_CONTEXT* pRegContext,DWORD *RegModifyMask);
+	int GetModifyRegisterCount(DWORD RegModifyMask);
+	~CRunTrace();
+	PSTRUNTRACE GetNextTrace();
+	PSTRUNTRACE GetPrevTrace();
+	UINT Insert(ULPOS StartAddress,ULPOS EIP,ULPOS CodeViewIndex);
+	void Clear();
+	PSTRUNTRACE GetTraceByIndex(DWORD Index);
+	void HeadNext();
+	UINT GetRunTraceCount();
+};
+
+#endif //_RUN_TRACE_H_

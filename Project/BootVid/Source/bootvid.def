@@ -1,0 +1,20 @@
+;
+; DEF file for sample kernel-mode DLL.
+;
+
+NAME bootvid.dll
+
+EXPORTS
+    DllInitialize PRIVATE
+    DllUnload     PRIVATE
+    VidDisplayStringXY 
+    VidDisplayString
+    VidSolidColorFill 
+    VidBitBlt
+	VidScreenToBufferBlt
+	VidBufferToScreenBlt
+	VidSetTextColor
+	VidInitialize
+	VidSetScrollRegion
+	VidResetDisplay
+    VidCleanUp

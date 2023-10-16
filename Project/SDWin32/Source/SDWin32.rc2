@@ -1,0 +1,55 @@
+#ifdef APSTUDIO_INVOKED
+#error 此文件不能由 Microsoft Visual C++ 编辑
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 在此处添加手动编辑的资源...
+
+/////////////////////////////////////////////////////////////////////////////
+#include <winver.h>
+#include "../../../Addition/SyserDebugger/SyserVersion.h"
+
+#define VER_FILETYPE                VFT_APP
+#define VER_FILESUBTYPE             0x8L
+#define VER_FILEDESCRIPTION_STR     "Syser debugger core"
+#define VER_INTERNALNAME_STR        "SDWin32.dll"  
+#define VER_ORIGINALFILENAME_STR    "SDWin32.dll"                             
+
+#define VER_VERSION_UNICODE_LANG  "040904B0" 
+#define VER_VERSION_TRANSLATION   0x0409, 0x04B0
+
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION    VER_FILEVERSION
+PRODUCTVERSION VER_PRODUCTVERSION
+FILEFLAGSMASK  VER_FILEFLAGSMASK
+FILEFLAGS      VER_FILEFLAGS
+FILEOS         VER_FILEOS
+FILETYPE       VER_FILETYPE
+FILESUBTYPE    VER_FILESUBTYPE
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK VER_VERSION_UNICODE_LANG
+        BEGIN
+	VALUE "Comments",		""
+            VALUE "CompanyName",     VER_COMPANYNAME_STR
+            VALUE "FileDescription", VER_FILEDESCRIPTION_STR 
+            VALUE "FileVersion",     VER_FILEVERSION_STR 
+            VALUE "InternalName",    VER_INTERNALNAME_STR
+            VALUE "LegalCopyright",  VER_LEGALCOPYRIGHT_STR
+			VALUE "LegalTrademarks", VER_LEGALTRADEMARKS_STR
+            VALUE "OriginalFilename",VER_ORIGINALFILENAME_STR
+            VALUE "ProductName",     VER_PRODUCTNAME_STR
+            VALUE "ProductVersion",  VER_PRODUCTVERSION_STR
+			VALUE "SpecialBuild",	VER_SPECIALBUILD_INFO
+			VALUE "PrivateBuild",	""
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", VER_VERSION_TRANSLATION
+    END
+END

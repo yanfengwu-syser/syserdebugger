@@ -1,0 +1,34 @@
+TARGETNAME=Code
+TARGETPATH=Obj
+TARGETTYPE=DRIVER_LIBRARY
+
+C_DEFINES = $(C_DEFINES) /DCODE_OS_NT_DRV /DCODE_ALLOC_USER_HEAP
+
+PRECOMPILED_CXX=1
+PRECOMPILED_INCLUDE=StdAfx.h
+PRECOMPILED_PCH=StdAfx.pch
+PRECOMPILED_OBJ=StdAfx.obj
+
+SOURCES=NTDrvRuntime.cpp	\
+		FileIO.cpp		\
+		FileIONTDrv.cpp	\
+		Handle.cpp		\
+		ImageFile.cpp	\
+		LogFile.cpp		\
+		Maths.cpp		\
+		TXTFile.cpp		\
+		StrMem.cpp		\
+		SysDep.cpp		\
+		NewAlloc.cpp	\
+		NewAllocNTDrv.cpp	\
+		DebugNewAlloc.cpp	\
+		DebugNewAllocNTDrv.cpp	\
+		Compress.cpp	\
+		CmdParser.cpp	\
+		PolyFS.cpp		\
+		PageMem.cpp		\
+		Heap.cpp		\
+		Float2String.cpp	\
+		Crc.cpp			\
+		OptionValue.cpp
+

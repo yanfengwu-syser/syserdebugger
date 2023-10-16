@@ -1,0 +1,4 @@
+#ifndef __SYSTEMKERNELOBJECT__H__
+#define __SYSTEMKERNELOBJECT__H__
+
+#endif //__SYSTEMKERNELOBJECT__H__
