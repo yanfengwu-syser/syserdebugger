@@ -9,3 +9,7 @@ The open source project is as his last wish.
 ## Build
 
 [Buidling method](Doc/build.md)
+
+## Demonstration of SyserDebugger functionality
+
+Visit https://www.bilibili.com/video/BV1vy4y1C7PQ/
