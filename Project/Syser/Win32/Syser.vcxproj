@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0624BDA6-0FF6-44BA-95A1-992E64270B5D}</ProjectGuid>
+    <RootNamespace>Syser</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.33801.447</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../Addition/SyserDebugger;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SYSER_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../Bin/i386/SyserD.exe</OutputFile>
+      <ModuleDefinitionFile>SyserUDM.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../../Bin/i386/$(ProjectName)Ring3D.pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols />
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>../../../Bin/i386/SyserUDM.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../../../Addition/SyserDebugger;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_SYSER_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../../Bin/i386/Syser.exe</OutputFile>
+      <ModuleDefinitionFile>SyserUDM.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../../../Bin/i386/$(ProjectName)Ring3.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>../../../Bin/i386/SyserUDM.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\WINDDK\2600.1106\inc\ddk\wxp\ntddk.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\..\..\..\WINDDK\2600.1106\inc\wxp\ntstatus.h" />
+    <ClInclude Include="..\..\..\Addition\Diasdk\include\cvconst.h" />
+    <ClInclude Include="..\..\..\Addition\Diasdk\include\dia2.h" />
+    <ClInclude Include="..\..\..\Addition\SyserDebugger\SDSymbol.h" />
+    <ClInclude Include="..\..\..\Addition\SyserDebugger\SyserDebugger.h" />
+    <ClInclude Include="..\..\SyserApp\Source\AnalyseCom.h" />
+    <ClInclude Include="..\..\SyserApp\Source\LoadSourceFile.h" />
+    <ClInclude Include="..\..\SyserApp\Source\NoPDBSymbol.h" />
+    <ClInclude Include="..\..\SyserApp\Source\SourceDebug.h" />
+    <ClInclude Include="..\Source\AddTypeViewerDlg.h" />
+    <ClInclude Include="..\Source\Analyzer.h" />
+    <ClInclude Include="..\Source\BpintCmd.h" />
+    <ClInclude Include="..\Source\BreakPointForm.h" />
+    <ClInclude Include="..\Source\BugCheckCode.h" />
+    <ClInclude Include="..\Source\CallStack.h" />
+    <ClInclude Include="..\Source\CallStackWnd.h" />
+    <ClInclude Include="..\Source\CodeBPEdit.h" />
+    <ClInclude Include="..\Source\CodeView.h" />
+    <ClInclude Include="..\Source\ColorOption.h" />
+    <ClInclude Include="..\Source\CommentList.h" />
+    <ClInclude Include="..\Source\ConsoleWnd.h" />
+    <ClInclude Include="..\Source\CrossReferenceForm.h" />
+    <ClInclude Include="..\Source\DataBPEdit.h" />
+    <ClInclude Include="..\Source\DataOperatorDlg.h" />
+    <ClInclude Include="..\Source\DataView.h" />
+    <ClInclude Include="..\Source\DataViewForm.h" />
+    <ClInclude Include="..\Source\DbgProcess.h" />
+    <ClInclude Include="..\Source\DebugCmd.h" />
+    <ClInclude Include="..\Source\DebuggerSelectForm.h" />
+    <ClInclude Include="..\Source\ErrorCodeTable.h" />
+    <ClInclude Include="..\Source\ErrorCodeWnd.h" />
+    <ClInclude Include="..\Source\FpuRegisterList.h" />
+    <ClInclude Include="..\Source\FunctionListWnd.h" />
+    <ClInclude Include="..\Source\GDTWnd.h" />
+    <ClInclude Include="..\Source\GeneRegList.h" />
+    <ClInclude Include="..\Source\HwndCmd.h" />
+    <ClInclude Include="..\Source\HwndWnd.h" />
+    <ClInclude Include="..\Source\IBMAsciiWnd.h" />
+    <ClInclude Include="..\Source\IDTWnd.h" />
+    <ClInclude Include="..\Source\InputDriver.h" />
+    <ClInclude Include="..\Source\KeyMappingPage.h" />
+    <ClInclude Include="..\Source\Lex2.h" />
+    <ClInclude Include="..\Source\LocalAPIC.h" />
+    <ClInclude Include="..\Source\MainFrame.h" />
+    <ClInclude Include="..\Source\ModuleListWnd.h" />
+    <ClInclude Include="..\Source\MultiCodeView.h" />
+    <ClInclude Include="..\Source\MultiDataView.h" />
+    <ClInclude Include="..\Source\MultiSourceCodeView.h" />
+    <ClInclude Include="..\Source\NTDLLDefine.h" />
+    <ClInclude Include="..\Source\NtstatStr.h" />
+    <ClInclude Include="..\Source\NTUtility.h" />
+    <ClInclude Include="..\Source\ObjectDirectoryWnd.h" />
+    <ClInclude Include="..\Source\ObjFileView.h" />
+    <ClInclude Include="..\Source\OSData.h" />
+    <ClInclude Include="..\Source\osprocessthread.h" />
+    <ClInclude Include="..\Source\OtherCmd.h" />
+    <ClInclude Include="..\Source\PageMapWnd.h" />
+    <ClInclude Include="..\Source\PEExplorer.h" />
+    <ClInclude Include="..\Source\PluginListForm.h" />
+    <ClInclude Include="..\Source\ProcessList.h" />
+    <ClInclude Include="..\Source\RegHelpWnd.h" />
+    <ClInclude Include="..\Source\Resource.h" />
+    <ClInclude Include="..\Source\Ring3Object.h" />
+    <ClInclude Include="..\Source\RunTrace.h" />
+    <ClInclude Include="..\Source\RunTraceWnd.h" />
+    <ClInclude Include="..\Source\SDSModuleList.h" />
+    <ClInclude Include="..\Source\SearchDialog.h" />
+    <ClInclude Include="..\Source\SEHChainWnd.h" />
+    <ClInclude Include="..\Source\SerialPort.h" />
+    <ClInclude Include="..\Source\ShareCmd.h" />
+    <ClInclude Include="..\Source\SourceCodeWatchList.h" />
+    <ClInclude Include="..\Source\SourceCodeWnd.h" />
+    <ClInclude Include="..\Source\SourceDebugClassView.h" />
+    <ClInclude Include="..\Source\SourceDebugFrameWnd.h" />
+    <ClInclude Include="..\Source\SSERegisterList.h" />
+    <ClInclude Include="..\Source\StackWatchList.h" />
+    <ClInclude Include="..\Source\StdAfx.h" />
+    <ClInclude Include="..\Source\StringReference.h" />
+    <ClInclude Include="..\Source\Syser.h" />
+    <ClInclude Include="..\Source\SyserAboutForm.h" />
+    <ClInclude Include="..\Source\SyserApp.h" />
+    <ClInclude Include="..\Source\SyserCmd.h" />
+    <ClInclude Include="..\Source\SyserDefine.h" />
+    <ClInclude Include="..\Source\SyserMemoryReadWrite.h" />
+    <ClInclude Include="..\Source\SyserOption.h" />
+    <ClInclude Include="..\Source\SyserResource.h" />
+    <ClInclude Include="..\Source\SyserSymAnalyzer.h" />
+    <ClInclude Include="..\Source\SyserUI.h" />
+    <ClInclude Include="..\Source\SysInfo.h" />
+    <ClInclude Include="..\Source\SystemExplorer.h" />
+    <ClInclude Include="..\Source\SystemIoctl.h" />
+    <ClInclude Include="..\Source\ThreadListWnd.h" />
+    <ClInclude Include="..\Source\TypeViewerWnd.h" />
+    <ClInclude Include="..\Source\Undoc.h" />
+    <ClInclude Include="..\Source\VideoDriver.h" />
+    <ClInclude Include="..\Source\WatchList.h" />
+    <ClInclude Include="..\Source\WndStringReference.h" />
+    <ClInclude Include="..\Source\X86Define.h" />
+    <ClInclude Include="..\Source\X86Optr.h" />
+    <ClInclude Include="..\Source\X86RegHelpTabWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\Res\CurEIP.cur" />
+    <None Include="..\Source\Res\rt_manif.bin" />
+    <None Include="..\Source\syntax_color.l" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Source\Res\Syser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Source\Syser.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SyserApp\Source\AnalyseCom.cpp" />
+    <ClCompile Include="..\..\SyserApp\Source\LoadSourceFile.cpp" />
+    <ClCompile Include="..\..\SyserApp\Source\NoPDBSymbol.cpp" />
+    <ClCompile Include="..\..\SyserApp\Source\SourceDebug.cpp" />
+    <ClCompile Include="..\Source\AddTypeViewerDlg.cpp" />
+    <ClCompile Include="..\Source\Analyzer.cpp" />
+    <ClCompile Include="..\Source\BreakPointForm.cpp" />
+    <ClCompile Include="..\Source\BugCheckCode.cpp" />
+    <ClCompile Include="..\Source\CallStack.cpp" />
+    <ClCompile Include="..\Source\CallStackWnd.cpp" />
+    <ClCompile Include="..\Source\CodeBPEdit.cpp" />
+    <ClCompile Include="..\Source\CodeView.cpp" />
+    <ClCompile Include="..\Source\ColorOption.cpp" />
+    <ClCompile Include="..\Source\CommentList.cpp" />
+    <ClCompile Include="..\Source\ConsoleWnd.cpp" />
+    <ClCompile Include="..\Source\CrossReferenceForm.cpp" />
+    <ClCompile Include="..\Source\DataBPEdit.cpp" />
+    <ClCompile Include="..\Source\DataOperatorDlg.cpp" />
+    <ClCompile Include="..\Source\DataView.cpp" />
+    <ClCompile Include="..\Source\DataViewForm.cpp" />
+    <ClCompile Include="..\Source\DebugCmd.cpp" />
+    <ClCompile Include="..\Source\DebuggerSelectForm.cpp" />
+    <ClCompile Include="..\Source\ErrorCodeTable.cpp" />
+    <ClCompile Include="..\Source\ErrorCodeWnd.cpp" />
+    <ClCompile Include="..\Source\FpuRegisterList.cpp" />
+    <ClCompile Include="..\Source\FunctionListWnd.cpp" />
+    <ClCompile Include="..\Source\GDTWnd.cpp" />
+    <ClCompile Include="..\Source\GeneRegList.cpp" />
+    <ClCompile Include="..\Source\HwndCmd.cpp" />
+    <ClCompile Include="..\Source\HwndWnd.cpp" />
+    <ClCompile Include="..\Source\IBMAsciiWnd.cpp" />
+    <ClCompile Include="..\Source\IDTWnd.cpp" />
+    <ClCompile Include="..\Source\KeyMappingPage.cpp" />
+    <ClCompile Include="..\Source\Lex2.cpp" />
+    <ClCompile Include="..\Source\MainFrame.cpp" />
+    <ClCompile Include="..\Source\ModuleListWnd.cpp" />
+    <ClCompile Include="..\Source\MultiCodeView.cpp" />
+    <ClCompile Include="..\Source\MultiDataView.cpp" />
+    <ClCompile Include="..\Source\MultiSourceCodeView.cpp" />
+    <ClCompile Include="..\Source\NtstatStr.cpp" />
+    <ClCompile Include="..\Source\ObjectDirectoryWnd.cpp" />
+    <ClCompile Include="..\Source\ObjFileView.cpp" />
+    <ClCompile Include="..\Source\OSData.cpp" />
+    <ClCompile Include="..\Source\osprocessthread.cpp" />
+    <ClCompile Include="..\Source\OtherCmd.cpp" />
+    <ClCompile Include="..\Source\PageMapWnd.cpp" />
+    <ClCompile Include="..\Source\PEExplorer.cpp" />
+    <ClCompile Include="..\Source\PluginListForm.cpp" />
+    <ClCompile Include="..\Source\ProcessList.cpp" />
+    <ClCompile Include="..\Source\RegHelpWnd.cpp" />
+    <ClCompile Include="..\Source\Resource.cpp" />
+    <ClCompile Include="..\Source\Ring3Object.cpp" />
+    <ClCompile Include="..\Source\RunTrace.cpp" />
+    <ClCompile Include="..\Source\RunTraceWnd.cpp" />
+    <ClCompile Include="..\Source\SDSModuleList.cpp" />
+    <ClCompile Include="..\Source\SearchDialog.cpp" />
+    <ClCompile Include="..\Source\SEHChainWnd.cpp" />
+    <ClCompile Include="..\Source\ShareCmd.cpp" />
+    <ClCompile Include="..\Source\SourceCodeWatchList.cpp" />
+    <ClCompile Include="..\Source\SourceCodeWnd.cpp" />
+    <ClCompile Include="..\Source\SourceDebugClassView.cpp" />
+    <ClCompile Include="..\Source\SourceDebugFrameWnd.cpp" />
+    <ClCompile Include="..\Source\SSERegisterList.cpp" />
+    <ClCompile Include="..\Source\StackWatchList.cpp" />
+    <ClCompile Include="..\Source\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Source\StringReference.cpp" />
+    <ClCompile Include="..\Source\SyserAboutForm.cpp" />
+    <ClCompile Include="..\Source\SyserApp.cpp" />
+    <ClCompile Include="..\Source\SyserMemoryReadWrite.cpp" />
+    <ClCompile Include="..\Source\SyserOption.cpp" />
+    <ClCompile Include="..\Source\SyserSymAnalyzer.cpp" />
+    <ClCompile Include="..\Source\SyserUI.cpp" />
+    <ClCompile Include="..\Source\SystemExplorer.cpp" />
+    <ClCompile Include="..\Source\SystemIoctl.cpp" />
+    <ClCompile Include="..\Source\ThreadListWnd.cpp" />
+    <ClCompile Include="..\Source\TypeViewerWnd.cpp" />
+    <ClCompile Include="..\Source\WatchList.cpp" />
+    <ClCompile Include="..\Source\WndStringReference.cpp" />
+    <ClCompile Include="..\Source\X86RegHelpTabWnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Code\Win32\Code.vcxproj">
+      <Project>{e50360c3-a8d9-4582-a0b8-0f8f88467113}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EXEAnalyzer\Win32\EXEAnalyzer.vcxproj">
+      <Project>{094fa380-e96b-4ccb-8f40-d58f53823984}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SDWin32\Win32\SDWin32.vcxproj">
+      <Project>{bb4c6b43-4809-417b-adbc-981eff82c18e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WinWisp\Win32\WinWisp.vcxproj">
+      <Project>{142e5b2e-bb1f-42a2-b357-81f97f85f86e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wisp\Win32\Wisp.vcxproj">
+      <Project>{d3a470e1-dbd8-4ccb-bbb4-46842d343f84}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -5189,28 +5189,28 @@ char* CSourceDebug::GetSDSymbolName(IN PSDTYPE_INFILE SDTypeInfile,OUT char *Nam
 			return 	GetSDSymbolName(pUdtBaseClassType->TypeID,NameBuffer,BufferLength);
 		}
 	case SD_ENUMERATION:
-		TStrCpy(TypeName,"enum "NTOSKRNLVER);
+		TStrCpy(TypeName,"enum " NTOSKRNLVER);
 		len = TStrLen(TypeName);
 		if(*BufferLength>len)
 			TStrCpy(NameBuffer,TypeName);
 		*BufferLength-=len;
 		goto local_002;
 	case SD_CLASS:
-		TStrCpy(TypeName,"class "NTOSKRNLVER);
+		TStrCpy(TypeName,"class " NTOSKRNLVER);
 		len = TStrLen(TypeName);
 		if(*BufferLength>len)
 			TStrCpy(NameBuffer,TypeName);
 		*BufferLength-=len;
 		goto local_002;
 	case SD_STRUCT:
-		TStrCpy(TypeName,"struct "NTOSKRNLVER);
+		TStrCpy(TypeName,"struct " NTOSKRNLVER);
 		len = TStrLen(TypeName);
 		if(*BufferLength>len)
 			TStrCpy(NameBuffer,TypeName);
 		*BufferLength-=len;
 		goto local_002;
 	case SD_UNION:
-		TStrCpy(TypeName,"union "NTOSKRNLVER);
+		TStrCpy(TypeName,"union " NTOSKRNLVER);
 		len = TStrLen(TypeName);
 		if(*BufferLength>len)
 			TStrCpy(NameBuffer,TypeName);
@@ -6083,7 +6083,7 @@ DWORD CSourceDebug::DumpSDEnumTypeToHeaderFile(SDTYPE_INFILE* SDTypeInfile ,CStr
 	char WriteBuffer[50];
 	SDENUMERATIONTYPE* pEnumationType;
 	DWORD WriteByteSize=0;
-	(*m_HeaderOutStream)<<"enum "NTOSKRNLVER<<SDTypeInfile->uName.Name<<"\n{\n";
+	(*m_HeaderOutStream)<< "enum " NTOSKRNLVER <<SDTypeInfile->uName.Name<<"\n{\n";
 	pEnumationType = (SDENUMERATIONTYPE*)&SDTypeInfile[1];
 	for(unsigned int i = 0; i < pEnumationType->DataCount; i++)	
 	{
