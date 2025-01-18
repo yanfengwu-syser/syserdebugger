@@ -13,7 +13,7 @@ using namespace std;
 #include "../../EXEAnalyzer/Source/EXEAnalyzer.h"
 #include "../../Wisp/Source/Wisp.h"
 #include "../../WinWisp/Source/WinWisp.h"
-#include "../../SerialNumber/Source/Validate.h"
+//NA #include "../../SerialNumber/Source/Validate.h"
 
 #include "ddraw.h"
 #include <DbgHelp.h>
@@ -22,7 +22,7 @@ using namespace std;
 #include <Wininet.h>
 #include <SyserDebugger.h>
 
-#include "../../SDbgMsg/Source/SDbgMsg.h"
+//NA #include "../../SDbgMsg/Source/SDbgMsg.h"
 #include "../../Syser/Source/SyserDefine.h"
 #include "../../Syser/Source/X86Define.h"
 

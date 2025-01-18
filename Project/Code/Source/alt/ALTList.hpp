@@ -52,7 +52,7 @@ public:
 	inline	bool operator!=(const TListIter&Iter){ return pNode != Iter.pNode; }
 };
 
-template<class VALUE = ALTArchive>
+template<class VALUE = ALTEmptyArchive> //ALTArchive>
 class TList : public ALTObj<TListNode<VALUE> >
 {
 public:

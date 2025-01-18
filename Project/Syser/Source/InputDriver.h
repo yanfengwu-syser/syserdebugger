@@ -18,6 +18,8 @@
 #define KEYBOARD_NUM_LOCK					2
 #define KEYBOARD_SCROLL_LOCK				1
 
+#include <windows.h>
+
 DWORD GetHardwareInterruptVectorNum(DWORD dwNum);
 
 #ifdef __cplusplus
@@ -223,7 +225,7 @@ VOID SyserInterrupt_0xF8_Keyboard_Service(VOID);
 }; // extern "C"
 #endif
 
-
+/* redefinition!
 typedef struct _IMAGE_DATA_DIRECTORY {
 	DWORD   VirtualAddress;
 	DWORD   Size;
@@ -427,7 +429,7 @@ typedef struct _IMAGE_IMPORT_DESCRIPTOR {
 	DWORD   FirstThunk;                     // RVA to IAT (if bound this IAT has actual addresses)
 } IMAGE_IMPORT_DESCRIPTOR;
 typedef IMAGE_IMPORT_DESCRIPTOR UNALIGNED *PIMAGE_IMPORT_DESCRIPTOR;
-
+*/
 #ifdef __cplusplus
 extern "C" {
 #endif

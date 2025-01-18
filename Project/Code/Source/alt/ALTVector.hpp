@@ -5,7 +5,7 @@
 
 ALT_NAME_SPACE_BEGIN
 
-template<class VALUE,int InitSize = 0,class ALTArchiveType = ALTArchive>
+template<class VALUE,int InitSize = 0,class ALTArchiveType = ALTEmptyArchive> //	ALTArchive>
 class TVector : public ALTObj<VALUE>
 {
 public:

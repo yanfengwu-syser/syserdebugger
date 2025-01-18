@@ -1,0 +1,9 @@
+.vs/
+bin/**
+tmp/**
+*.suo
+/ipch
+*.user
+*.aps
+*.tmp
+Debug/

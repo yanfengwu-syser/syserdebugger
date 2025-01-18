@@ -5,7 +5,17 @@
 extern "C" {
 #endif
 
-bool SyserCFlag(VOID);
+	bool SyserCFlag(VOID) 
+	{ 
+		bool bSuccess = true;
+		 	__asm
+		 	{
+		 		jnc local_001
+		 		mov bSuccess,0
+		 local_001:
+		 	}
+		return bSuccess;
+	}
 
 #ifdef __cplusplus
 }; // extern "C"
@@ -15,13 +25,6 @@ bool SafeWriteByte(void* Address,BYTE ByteValue)
 {
 	bool bSuccess=true;
 	SyserPrivateSafeWriteByte(Address,ByteValue);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	return bSuccess;
@@ -31,13 +34,6 @@ bool SafeWriteWord(void* Address,WORD WordValue)
 {
 	bool bSuccess=true;
 	SyserPrivateSafeWriteWord(Address,WordValue);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-	
 	bSuccess = SyserCFlag();
 
 	return bSuccess;
@@ -47,13 +43,6 @@ bool SafeWriteDword(void* Address,DWORD DwordValue)
 {
 	bool bSuccess=true;
 	SyserPrivateSafeWriteDword(Address,DwordValue);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	return bSuccess;
@@ -63,13 +52,6 @@ bool WriteByte(void* Address,BYTE ByteValue)
 {
 	bool bSuccess=true;
 	SyserPrivateWriteByte(Address,ByteValue);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	return bSuccess;
@@ -79,13 +61,6 @@ bool WriteWord(void* Address,WORD WordValue)
 {
 	bool bSuccess=true;
 	SyserPrivateWriteWord(Address,WordValue);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	return bSuccess;
@@ -95,13 +70,6 @@ bool WriteDword(void* Address,DWORD DwordValue)
 {
 	bool bSuccess=true;
 	SyserPrivateWriteDword(Address,DwordValue);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	return bSuccess;
@@ -163,13 +131,6 @@ BYTE ReadByte(void* Address,bool* Success)
 	BYTE RetValue;
 	bool bSuccess=true;
 	RetValue = SyserPrivateReadByte(Address);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	if(Success)
@@ -182,13 +143,6 @@ WORD ReadWord(void* Address,bool* Success)
 	WORD RetValue;
 	bool bSuccess=true;
 	RetValue = SyserPrivateReadWord(Address);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	if(Success)
@@ -201,13 +155,6 @@ DWORD ReadDword(void* Address,bool* Success)
 	DWORD RetValue;
 	bool bSuccess=true;
 	RetValue = SyserPrivateReadDword(Address);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	if(Success)
@@ -659,13 +606,6 @@ bool MemSearch(BYTE* SourceAddrss,DWORD SourceLen,BYTE *DestinationAddress,DWORD
 	bool bSuccess=true;
 	BYTE * pStr;
 	pStr = SyserPrivateMemSearch(SourceAddrss,SourceLen,DestinationAddress,DestinationLen);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	if(ErrorAddress)
@@ -678,13 +618,6 @@ BYTE* MemSearch(BYTE* SourceAddrss,DWORD SourceLen,BYTE *DestinationAddress,DWOR
 	bool bSuccess=true;
 	BYTE * pStr;
 	pStr = SyserPrivateMemSearch(SourceAddrss,SourceLen,DestinationAddress,DestinationLen);
-// 	__asm
-// 	{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	if(Success)
@@ -812,12 +745,6 @@ bool SafeMemCmp(BYTE* SourceAddress,BYTE* DestAddress,DWORD Len,DWORD* ReturnLen
 	bool bSuccess=true;
 	DWORD  RetValue;
 	RetValue = SyserPrivateMemCmp(SourceAddress,DestAddress,Len);
-// 	__asm{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	if(ReturnLen)
@@ -864,12 +791,6 @@ bool SafeVideoMemCopy(BYTE* DestAddress,BYTE* SourceAddress,DWORD Len)
 {
 	bool bSuccess=true;
 	SyserVideoMemCopy(DestAddress,SourceAddress,Len);
-// 	__asm{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	return bSuccess;
@@ -884,12 +805,6 @@ int SafeMemCopy(BYTE* DestAddress,BYTE* SourceAddress,DWORD Len)
 	DWORD i;
 	BYTE byteValue;
 	SyserPrivateMemCopy(DestAddress,SourceAddress,Len);
-// 	__asm{
-// 		jnc local_001
-// 		mov bSuccess,0
-// local_001:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	if(bSuccess)
@@ -923,15 +838,48 @@ int SafeMemCopy(BYTE* DestAddress,BYTE* SourceAddress,DWORD Len)
 	Len=MIN(dwSourceLen,dwDestLen);
 	bSuccess=true;
 	SyserPrivateMemCopy(DestAddress,SourceAddress,Len);
-// 	__asm{
-// 		jnc local_002
-// 		mov bSuccess,0
-// local_002:
-// 	}
-
 	bSuccess = SyserCFlag();
 
 	if(bSuccess)
 		return Len;
 	return 0;
 }
+
+
+//+
+//FIXME TODO
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+	BYTE __stdcall SyserPrivateReadByte(void* Address) { return 0; }
+	WORD __stdcall SyserPrivateReadWord(void* Address) { return 0; }
+	DWORD __stdcall SyserPrivateReadDword(void* Address) { return 0; }
+
+	VOID __stdcall SyserPrivateReadError() {}
+
+	VOID __stdcall SyserPrivateWriteByte(void* Address, BYTE ByteValue) {}
+	VOID __stdcall SyserPrivateWriteWord(void* Address, WORD WordValue) {}
+	VOID __stdcall SyserPrivateWriteDword(void* Address, DWORD DwordValue) {}
+
+	VOID __stdcall SyserPrivateSafeWriteByte(void* Address, BYTE ByteValue) {}
+	VOID __stdcall SyserPrivateSafeWriteWord(void* Address, WORD WordValue) {}
+	VOID __stdcall SyserPrivateSafeWriteDword(void* Address, DWORD DwordValue) {}
+
+
+	BYTE* __stdcall SyserPrivateFindDword(BYTE* Address1, DWORD Value, DWORD Len) { return 0; }
+	BYTE* __stdcall SyserPrivateFindWord(BYTE* Address1, WORD Value, DWORD Len) { return 0; }
+	BYTE* __stdcall SyserPrivateFindByte(BYTE* Address1, BYTE Value, DWORD Len) { return 0; }
+	int __stdcall SyserPrivateMemCopy(BYTE* Address1, BYTE* Address2, DWORD Len) { return 0; }
+	int __stdcall PrivateMemNCmp(DWORD* Address1, DWORD* Address2, DWORD Len) { return 0; }
+
+	BYTE* __stdcall SyserPrivateMemSearch(BYTE* SourceAddrss, DWORD SourceLen, BYTE* DestinationAddress, DWORD DestinationLen) { return 0; }
+	int __stdcall SyserPrivatePagePresent(BYTE* Address, DWORD Len) { return 0; }
+	DWORD  __stdcall SyserPrivateMemCmp(BYTE* SourceAddr, BYTE* DestAddr, DWORD Len) { return 0; }
+	int __stdcall SyserVideoMemCopy(BYTE* DestAddress, BYTE* SourceAddress, DWORD Len) { return 0; }
+#ifdef __cplusplus
+	}
+#endif
+
+//~

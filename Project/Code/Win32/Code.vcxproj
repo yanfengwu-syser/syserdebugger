@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Trial|Win32">
+      <Configuration>Trial</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E50360C3-A8D9-4582-A0B8-0F8F88467113}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.33801.447</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Code.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Code.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Code.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\CmdParser.cpp" />
+    <ClCompile Include="..\Source\Compress.cpp" />
+    <ClCompile Include="..\Source\Crc.cpp" />
+    <ClCompile Include="..\Source\DebugNewAlloc.cpp" />
+    <ClCompile Include="..\Source\DebugNewAllocWin32.cpp" />
+    <ClCompile Include="..\Source\FileIO.cpp" />
+    <ClCompile Include="..\Source\FileIOWin32.cpp" />
+    <ClCompile Include="..\Source\Float2String.cpp" />
+    <ClCompile Include="..\Source\Handle.cpp" />
+    <ClCompile Include="..\Source\Heap.cpp" />
+    <ClCompile Include="..\Source\HttpDownload.cpp" />
+    <ClCompile Include="..\Source\HttpUpload.cpp" />
+    <ClCompile Include="..\Source\ImageFile.cpp" />
+    <ClCompile Include="..\Source\INIFile.cpp" />
+    <ClCompile Include="..\Source\LogFile.cpp" />
+    <ClCompile Include="..\Source\Maths.cpp" />
+    <ClCompile Include="..\Source\NewAlloc.cpp" />
+    <ClCompile Include="..\Source\NewAllocWin32.cpp" />
+    <ClCompile Include="..\Source\OptionValue.cpp" />
+    <ClCompile Include="..\Source\PageMem.cpp" />
+    <ClCompile Include="..\Source\PolyFS.cpp" />
+    <ClCompile Include="..\Source\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Source\StrMem.cpp" />
+    <ClCompile Include="..\Source\SysDep.cpp" />
+    <ClCompile Include="..\Source\TXTFile.cpp" />
+    <ClCompile Include="..\Source\WinReg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\alt\alt.hpp" />
+    <ClInclude Include="..\Source\alt\ALTArray.hpp" />
+    <ClInclude Include="..\Source\alt\ALTBase.hpp" />
+    <ClInclude Include="..\Source\alt\ALTBTree.hpp" />
+    <ClInclude Include="..\Source\alt\ALTConfig.hpp" />
+    <ClInclude Include="..\Source\alt\ALTExpCalc.hpp" />
+    <ClInclude Include="..\Source\alt\ALTFileStream.hpp" />
+    <ClInclude Include="..\Source\alt\ALTList.hpp" />
+    <ClInclude Include="..\Source\alt\ALTMap.hpp" />
+    <ClInclude Include="..\Source\alt\ALTQueue.hpp" />
+    <ClInclude Include="..\Source\alt\ALTRangeMap.hpp" />
+    <ClInclude Include="..\Source\alt\ALTSet.hpp" />
+    <ClInclude Include="..\Source\alt\ALTStack.hpp" />
+    <ClInclude Include="..\Source\alt\ALTString.hpp" />
+    <ClInclude Include="..\Source\alt\ALTVector.hpp" />
+    <ClInclude Include="..\Source\CmdParser.h" />
+    <ClInclude Include="..\Source\Code.h" />
+    <ClInclude Include="..\Source\CodeConfig.h" />
+    <ClInclude Include="..\Source\CodeDepInc.h" />
+    <ClInclude Include="..\Source\Compress.h" />
+    <ClInclude Include="..\Source\Crc.h" />
+    <ClInclude Include="..\Source\DebugNewAlloc.h" />
+    <ClInclude Include="..\Source\Define.h" />
+    <ClInclude Include="..\Source\FileIO.h" />
+    <ClInclude Include="..\Source\FileIONTDrv.h" />
+    <ClInclude Include="..\Source\FileIOUnix.h" />
+    <ClInclude Include="..\Source\FileIOWin32.h" />
+    <ClInclude Include="..\Source\Float2String.h" />
+    <ClInclude Include="..\Source\Handle.h" />
+    <ClInclude Include="..\Source\Heap.h" />
+    <ClInclude Include="..\Source\HttpDownload.h" />
+    <ClInclude Include="..\Source\HttpUpload.h" />
+    <ClInclude Include="..\Source\ImageFile.h" />
+    <ClInclude Include="..\Source\INIFile.h" />
+    <ClInclude Include="..\Source\LogFile.h" />
+    <ClInclude Include="..\Source\Maths.h" />
+    <ClInclude Include="..\Source\NewAlloc.h" />
+    <ClInclude Include="..\Source\OptionValue.h" />
+    <ClInclude Include="..\Source\PageMem.h" />
+    <ClInclude Include="..\Source\PolyFS.h" />
+    <ClInclude Include="..\Source\StdAfx.h" />
+    <ClInclude Include="..\Source\StrMem.h" />
+    <ClInclude Include="..\Source\SysDep.h" />
+    <ClInclude Include="..\Source\TStrMem.h" />
+    <ClInclude Include="..\Source\TXTFile.h" />
+    <ClInclude Include="..\Source\WinReg.h" />
+    <ClInclude Include="..\Source\X86Debugger.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -2,7 +2,7 @@
 #define _BUGCHECKCODE_H_
 typedef struct _BUGCHECKCODE
 {
-	int BucCheckCode;
+	unsigned int BucCheckCode;
 	char* Name;
 	char* Description;
 }BUGCHECKCODE,*PBUGCHECKCODE;

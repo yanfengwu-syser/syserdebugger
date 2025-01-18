@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Trial|Win32">
+      <Configuration>Trial</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D3A470E1-DBD8-4CCB-BBB4-46842D343F84}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.33801.447</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Wisp.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Wisp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Wisp.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\DIBData.cpp" />
+    <ClCompile Include="..\Source\Ripple.cpp" />
+    <ClCompile Include="..\Source\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Trial|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utility.cpp" />
+    <ClCompile Include="..\Source\Wisp3D.cpp" />
+    <ClCompile Include="..\Source\WispBase.cpp" />
+    <ClCompile Include="..\Source\WispBaseWnd.cpp" />
+    <ClCompile Include="..\Source\WispButton.cpp" />
+    <ClCompile Include="..\Source\WispCalcWnd.cpp" />
+    <ClCompile Include="..\Source\WispCheckBox.cpp" />
+    <ClCompile Include="..\Source\WispColorStrWnd.cpp" />
+    <ClCompile Include="..\Source\WispComboBox.cpp" />
+    <ClCompile Include="..\Source\WispConsoleWnd.cpp" />
+    <ClCompile Include="..\Source\WispDC.cpp" />
+    <ClCompile Include="..\Source\WispDIB.cpp" />
+    <ClCompile Include="..\Source\WispDIBLib.cpp" />
+    <ClCompile Include="..\Source\WispDrawHAL.cpp" />
+    <ClCompile Include="..\Source\WispDrawObj.cpp" />
+    <ClCompile Include="..\Source\WispEdit.cpp" />
+    <ClCompile Include="..\Source\WispFont.cpp" />
+    <ClCompile Include="..\Source\WispForm.cpp" />
+    <ClCompile Include="..\Source\WispHexWnd.cpp" />
+    <ClCompile Include="..\Source\WispInfoWnd.cpp" />
+    <ClCompile Include="..\Source\WispList.cpp" />
+    <ClCompile Include="..\Source\WispMenu.cpp" />
+    <ClCompile Include="..\Source\WispMisc.cpp" />
+    <ClCompile Include="..\Source\WispMsgBox.cpp" />
+    <ClCompile Include="..\Source\WispMultiTabView.cpp" />
+    <ClCompile Include="..\Source\WispOptionForm.cpp" />
+    <ClCompile Include="..\Source\WispProgress.cpp" />
+    <ClCompile Include="..\Source\WispRadioBox.cpp" />
+    <ClCompile Include="..\Source\WispRGBSelect.cpp" />
+    <ClCompile Include="..\Source\WispSoftKeyboard.cpp" />
+    <ClCompile Include="..\Source\WispSplitWnd.cpp" />
+    <ClCompile Include="..\Source\WispStatic.cpp" />
+    <ClCompile Include="..\Source\WispTabWnd.cpp" />
+    <ClCompile Include="..\Source\WispTaskPanel.cpp" />
+    <ClCompile Include="..\Source\WispTipWnd.cpp" />
+    <ClCompile Include="..\Source\WispToolbar.cpp" />
+    <ClCompile Include="..\Source\WispWnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\DIBData.h" />
+    <ClInclude Include="..\Source\Ripple.h" />
+    <ClInclude Include="..\Source\StdAfx.h" />
+    <ClInclude Include="..\Source\Utility.h" />
+    <ClInclude Include="..\Source\Wisp.h" />
+    <ClInclude Include="..\Source\Wisp3D.h" />
+    <ClInclude Include="..\Source\WispBase.h" />
+    <ClInclude Include="..\Source\WispBaseWnd.h" />
+    <ClInclude Include="..\Source\WispButton.h" />
+    <ClInclude Include="..\Source\WispCalcWnd.h" />
+    <ClInclude Include="..\Source\WispCheckBox.h" />
+    <ClInclude Include="..\Source\WispColorStrWnd.h" />
+    <ClInclude Include="..\Source\WispComboBox.h" />
+    <ClInclude Include="..\Source\WispConfig.h" />
+    <ClInclude Include="..\Source\WispConsoleWnd.h" />
+    <ClInclude Include="..\Source\WispDC.h" />
+    <ClInclude Include="..\Source\WispDefine.h" />
+    <ClInclude Include="..\Source\WispDIB.h" />
+    <ClInclude Include="..\Source\WispDIBLib.h" />
+    <ClInclude Include="..\Source\WispDrawHAL.h" />
+    <ClInclude Include="..\Source\WispDrawObj.h" />
+    <ClInclude Include="..\Source\WispEdit.h" />
+    <ClInclude Include="..\Source\WispFont.h" />
+    <ClInclude Include="..\Source\WispForm.h" />
+    <ClInclude Include="..\Source\WispHexWnd.h" />
+    <ClInclude Include="..\Source\WispInfoWnd.h" />
+    <ClInclude Include="..\Source\WispList.h" />
+    <ClInclude Include="..\Source\WispMenu.h" />
+    <ClInclude Include="..\Source\WispMisc.h" />
+    <ClInclude Include="..\Source\WispMsgBox.h" />
+    <ClInclude Include="..\Source\WispMsgDefine.h" />
+    <ClInclude Include="..\Source\WispMultiTabView.h" />
+    <ClInclude Include="..\Source\WispOptionForm.h" />
+    <ClInclude Include="..\Source\WispProgress.h" />
+    <ClInclude Include="..\Source\WispRadioBox.h" />
+    <ClInclude Include="..\Source\WispRGBSelect.h" />
+    <ClInclude Include="..\Source\WispSoftKeyboard.h" />
+    <ClInclude Include="..\Source\WispSplitWnd.h" />
+    <ClInclude Include="..\Source\WispStatic.h" />
+    <ClInclude Include="..\Source\WispTabWnd.h" />
+    <ClInclude Include="..\Source\WispTaskPanel.h" />
+    <ClInclude Include="..\Source\WispTipWnd.h" />
+    <ClInclude Include="..\Source\WispToolbar.h" />
+    <ClInclude Include="..\Source\WispWnd.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
